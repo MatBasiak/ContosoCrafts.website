@@ -8,3 +8,17 @@
     <h1 class="display-4">CONTOSO CRAFTS</h1>
     <p>Hello world</p>
 </div>
+
+<div class="card-columns">
+      @foreach (var products in Model.Products)
+            {
+             <div class="card">
+                <div class="card-img" style="background-image:url('@products.Image')">
+                <div class="card-body">
+                  <h5 class="car"> @products.Title</h5>
+                </div>
+                </div>
+
+             </div>
+            }
+</div>
